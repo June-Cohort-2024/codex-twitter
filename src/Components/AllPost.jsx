@@ -8,7 +8,7 @@ export const AllPost = ({newTweet}) => {
     const token = import.meta.env.VITE_TOKEN
 
     const getPosts = async ()=>{
-        let newURL = `${url}/twitter_posts?id=`
+        let newURL = `${url}/twitter_posts?order=id.desc`
 
         let response  = await fetch(newURL, {
             method : "GET", 

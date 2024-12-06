@@ -18,9 +18,9 @@ export const Wall = () => {
 
   return (
     <>
-      <main className='container m-5'>
+      <main className='container mt-5'>
 
-        <div className='row justify-content-center text-center' >
+        <div className='row justify-content-center text-center'>
           <h1 >What is new</h1>
           <p >{userName}</p>
         </div>

@@ -1,15 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const LogIn = () => {
 
     let user = ""
 
+    const navigate = useNavigate()
+
     const submitHandler = (event)=>{
 
         event.preventDefault()
         window.localStorage.setItem("user", user)
-        window.location="/wall"
-        
+        navigate("/wall")
     }
 
     const changeHandler = (event) =>{
